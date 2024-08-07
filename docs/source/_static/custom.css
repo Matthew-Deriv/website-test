@@ -1,0 +1,78 @@
+/* Dark theme */
+:root {
+    --color-background-primary: #1a1a1a;
+    --color-background-secondary: #2d2d2d;
+    --color-background-hover: #3a3a3a;
+    --color-text-primary: #e0e0e0;
+    --color-text-secondary: #f00606;
+    --color-link: #6b9dc2;
+    --code-text-colour: #74c168;
+    --code-block-colour: #4b4651;
+}
+
+html {
+    background-color: var(--color-background-primary);
+}
+
+body {
+    background-color: var(--color-background-primary);
+    color: var(--color-text-primary); /* colour of overall text */
+}
+
+.highlight-bash {
+    color: var(--code-text-colour);
+    background-color: var(--code-block-colour);
+}
+
+
+pre {
+    background-color: var(--code-block-colour);
+    color: var(--code-text-colour);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.rst-content {
+    background-color: var(--color-background-secondary);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.doctest {
+    background-color: var(--color-background-secondary);
+    color: var(--color-text-primary);
+    /* padding: 20px; */
+    /* border-radius: 5px; */
+}
+
+.wy-nav-side {
+    background-color: var(--color-background-secondary);
+}
+
+.wy-nav-side .wy-side-nav-search {
+    background-color: var(--color-background-hover);
+}
+
+.wy-nav-content {
+    background-color: var(--color-background-primary);
+    max-width: 100%;
+}
+
+.wy-nav-content a {
+    color: var(--color-link);
+}
+
+.wy-nav-content a:hover {
+    color: var(--color-link);
+}
+
+/* Custom background color for code boxes */
+.highlight {
+    color: #f60808;
+    text-decoration-color: var(--code-text-colour);
+
+}
+
+.highlight span{
+    color: var(--code-text-colour) !important;
+}
